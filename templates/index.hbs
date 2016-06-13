@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" />
-	
+
 	{{> head meta-title=home.meta-title meta-description=home.meta-description}}
 
 	<body class="index">
-		<!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+		
+		{{> browser-upgrade}}
+
         <header>
 
 			<p>
@@ -28,14 +28,14 @@
 			<li>normalize scss</li>
 			<li>sass(scss)</li>
 			<li>console js</li>
-			
+
 			<li>modernizr</li>
 			<li>jQuery</li>
 			<li>JSON data</li>
 			<li>Handlebars partials</li>
 			<li>Gulp</li>
 		</ul>
-		
+
 		<p>
 			To use livereload, ensure your browser has livereload enabled in settings.
 		</p>
@@ -43,7 +43,7 @@
 		<p>
 			Don't forget to run Gulp in the command line!
 		</p>
-		
+
 		{{> footer}}
 
 	</body>
