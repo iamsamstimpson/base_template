@@ -1,21 +1,45 @@
-// External imports
+/**
+ * Import order:
+ *
+ * 1). Settings: Global variables, site-wide settings, config switches, etc.
+ * 2). Tools: Site-wide mixins and functions.
+ * 3). Generic: Low-specificity, far-reaching rulesets (e.g. resets).
+ * 4). Base: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+ * 5). Objects: Objects, abstractions, and design patterns (e.g. .media {}).
+ * 6). Components: Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t get involved with.
+ * 7). Trumps: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+ */
 
-@import '../../bower_components/normalize-scss/normalize.scss'; 
 
-// Variables
-$white: #fff;
-$grey: #ccc;
-$text: #222;
-$blue: #009ACD;
-$green: #228B22;
 
-// Global
-@import 'global';
 
-// Partials
-@import 'header';
-@import 'footer';
+ ///*------------------------------------*\
+ //    #SETTINGS
+ //\*------------------------------------*/
 
-// Pages
-@import 'index'; // home
-@import 'about/index'; // about
+@import: "settings.defaults";
+@import: "settings.responsive";
+
+///*------------------------------------*\
+//    #TOOLS
+//\*------------------------------------*/
+
+///*------------------------------------*\
+//    #GENERIC
+//\*------------------------------------*/
+
+///*------------------------------------*\
+//    #BASE
+//\*------------------------------------*/
+
+///*------------------------------------*\
+//    #OBJECTS
+//\*------------------------------------*/
+
+///*------------------------------------*\
+//    #COMPONENTS
+//\*------------------------------------*/
+
+///*------------------------------------*\
+//    #TRUMPS
+//\*------------------------------------*/
