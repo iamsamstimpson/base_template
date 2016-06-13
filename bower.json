@@ -1,0 +1,8 @@
+{
+  "name": "templating",
+  "version": "0.2.0",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
