@@ -13,9 +13,9 @@
 $inuit-layout-namespace:        $inuit-namespace !default;
 
 $inuit-layout-gutter:           $inuit-base-spacing-unit !default;
-$inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter) !default;
-$inuit-layout-gutter--small:        halve($inuit-layout-gutter) !default;
-$inuit-layout-gutter--large:       double($inuit-layout-gutter) !default;
+$inuit-layout-gutter--tiny:     quarter($inuit-layout-gutter) !default;
+$inuit-layout-gutter--small:    halve($inuit-layout-gutter) !default;
+$inuit-layout-gutter--large:    double($inuit-layout-gutter) !default;
 $inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
 
 $inuit-enable-layout--tiny:     false !default;
@@ -52,6 +52,7 @@ $inuit-global-border-box: false !default;
     margin:  0;
     padding: 0;
     margin-left: -$inuit-layout-gutter;
+    font-size: 0; // -> Strips whitespace between inline-block elements
 }
 
     /**
@@ -67,7 +68,7 @@ $inuit-global-border-box: false !default;
         padding-left: $inuit-layout-gutter; /* [2] */
         vertical-align: top; /* [3] */
         width: 100%; /* [4] */
-
+        font-size: $inuit-base-font-size; // -> Resets font-size to default set in _vars.scss
         @if $inuit-global-border-box == false {
             -webkit-box-sizing: border-box; /* [5] */
                -moz-box-sizing: border-box; /* [5] */

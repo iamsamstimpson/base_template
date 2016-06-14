@@ -10,7 +10,23 @@
  * 7). Trumps: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
  */
 
+// object.layout
+$inuit-layout-namespace: project-;
+$inuit-global-border-box: true;
 
+
+// enables layout gutter manipulation within object.layout
+$inuit-enable-layout--tiny:     true;
+$inuit-enable-layout--small:    true;
+$inuit-enable-layout--large:    true;
+$inuit-enable-layout--huge:     true;
+$inuit-enable-layout--flush:    true;
+$inuit-enable-layout--rev:      true;
+$inuit-enable-layout--middle:   true;
+$inuit-enable-layout--bottom:   true;
+$inuit-enable-layout--right:    true;
+$inuit-enable-layout--center:   true;
+$inuit-enable-layout--auto:     true;
 
 
  ///*------------------------------------*\
@@ -65,6 +81,8 @@
 @import "objects.pack";
 @import "objects.tables";
 @import "objects.tabs";
+
+@import "custom/container";
 
 ///*------------------------------------*\
 //    #COMPONENTS
